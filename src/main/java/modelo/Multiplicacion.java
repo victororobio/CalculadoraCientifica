@@ -11,4 +11,4 @@ public class Multiplicacion extends OperacionBase {
     public double calcular() {
         return this.num1 * this.num2;
     }
-}
+} 
