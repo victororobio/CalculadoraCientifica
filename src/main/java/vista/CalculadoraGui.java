@@ -42,35 +42,33 @@ public class CalculadoraGui extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        txtNum1.setText("txtNum1 ");
+        txtNum1.setText("Ingrese un número 1");
         txtNum1.addActionListener(this::txtNum1ActionPerformed);
 
-        txtNum2.setText("txtNum2 ");
+        txtNum2.setText("Ingrese un número 2");
         txtNum2.addActionListener(this::txtNum2ActionPerformed);
 
-        lblResultado.setText("lblResultado ");
+        lblResultado.setText("Resultado:");
 
-        btnSuma.setText("btnSuma");
+        btnSuma.setText("+");
         btnSuma.addActionListener(this::btnSumaActionPerformed);
 
-        btnResta.setText("btnResta");
+        btnResta.setText("-");
         btnResta.addActionListener(this::btnRestaActionPerformed);
 
-        btnMulti.setText("btnMulti");
+        btnMulti.setText("*");
         btnMulti.addActionListener(this::btnMultiActionPerformed);
 
-        btnDiv.setText("btnDiv");
+        btnDiv.setText("÷");
         btnDiv.addActionListener(this::btnDivActionPerformed);
 
-        btnRaizCuad.setText("btnRaizCuad");
+        btnRaizCuad.setText("√");
         btnRaizCuad.addActionListener(this::btnRaizCuadActionPerformed);
 
-        btnRaizCub.setText("btnRaizCub");
+        btnRaizCub.setText("√3");
         btnRaizCub.addActionListener(this::btnRaizCubActionPerformed);
 
-        lblMensaje.setText("lblMensaje ");
-
-        btnLog.setText("btnLog");
+        btnLog.setText("ln");
         btnLog.addActionListener(this::btnLogActionPerformed);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -80,36 +78,33 @@ public class CalculadoraGui extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(txtNum1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(96, 96, 96)
-                        .addComponent(txtNum2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(btnSuma)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnResta))
+                        .addGap(116, 116, 116)
+                        .addComponent(lblMensaje))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(btnDiv)
+                        .addComponent(txtNum1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+                        .addComponent(txtNum2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(20, 20, 20))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLog, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(32, 32, 32)
-                                .addComponent(btnLog))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(btnRaizCuad)
-                                .addGap(18, 18, 18)
+                                .addComponent(btnDiv)
+                                .addGap(12, 12, 12)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnMulti)
-                                    .addComponent(btnRaizCub)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(116, 116, 116)
-                        .addComponent(lblMensaje)))
-                .addContainerGap(96, Short.MAX_VALUE))
+                                    .addComponent(btnResta)
+                                    .addComponent(btnRaizCuad)))
+                            .addComponent(btnSuma))
+                        .addGap(16, 16, 16)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnMulti)
+                            .addComponent(btnRaizCub, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(128, 128, 128))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -118,7 +113,7 @@ public class CalculadoraGui extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtNum1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNum2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
+                .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSuma)
                     .addComponent(btnResta)
@@ -130,11 +125,11 @@ public class CalculadoraGui extends javax.swing.JFrame {
                     .addComponent(btnRaizCub))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnLog)
-                .addGap(18, 18, 18)
+                .addGap(28, 28, 28)
                 .addComponent(lblResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(13, 13, 13)
                 .addComponent(lblMensaje)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(38, Short.MAX_VALUE))
         );
 
         pack();
